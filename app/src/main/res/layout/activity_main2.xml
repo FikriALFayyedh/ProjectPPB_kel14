@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:background="@color/blue">
+
+            <ImageView
+                android:id="@+id/backhome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_west_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Sistem Komputer"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="60 s"
+                android:textSize="24sp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lineSoal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/blue"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvSoal"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linePilihanJawaban"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lineSoal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+        <RadioGroup
+            android:id="@+id/rgPilihan"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSoal">
+
+            <RadioButton
+                android:id="@+id/rbA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilihan 1"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/rbB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilihan 2"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/rbC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilihan 3"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/rbD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilihan 4"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+
+        </RadioGroup>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+
+            <Button
+                android:id="@+id/btnSelanjutnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Soal Selanjutnya"
+                android:layout_margin="30dp"
+                android:background="@color/blue"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30pt"/>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

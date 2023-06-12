@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "959099798126",
+    "project_id": "login-project-ppb-80bc5",
+    "storage_bucket": "login-project-ppb-80bc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959099798126:android:93e3103ed363fc7e6ddc7f",
+        "android_client_info": {
+          "package_name": "com.example.projectppb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwhyWiOZT5wceoKFbexnHLYZNGSjXTnJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

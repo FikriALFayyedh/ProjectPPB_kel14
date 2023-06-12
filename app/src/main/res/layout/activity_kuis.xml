@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".kuis">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <ImageView
+                android:id="@+id/backhome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_west_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sistem Komputer"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_more_vert_24"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<!--    <LinearLayout-->
+<!--        android:id="@+id/lineSkor"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="left"-->
+<!--        android:background="@color/blue">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Score : "-->
+<!--            android:textSize="22sp"-->
+<!--            android:textColor="@color/white"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvSkor"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="0"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textColor="@color/white"/>-->
+<!--    </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/lineSoal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/blue"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvSoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linePilihanJawaban"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/lineSoal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <RadioGroup
+                    android:id="@+id/rgPilihanJawaban"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rbPilihanJawaban1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPilihanJawaban2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPilihanJawaban3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPilihanJawaban4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18sp" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+<!--        <Button-->
+<!--            android:id="@+id/prev"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:text="@string/prev"-->
+<!--            android:background="@color/blue"-->
+<!--            android:textColor="#FFFFFF" />-->
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/next"
+            android:background="@color/blue"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

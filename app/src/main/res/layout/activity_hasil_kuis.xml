@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HasilKuis">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backhome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_home_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Sistem Komputer"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Nilai Kamu Adalah"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/tvNilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:text="100"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai kamu adalah A, Selamat Kamu Lulus"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvNilai"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="benar?, salah?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvMessage"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnUlang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ulangi Kuis"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvHasil"/>
+
+
+</RelativeLayout>
